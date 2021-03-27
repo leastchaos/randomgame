@@ -13,11 +13,11 @@ class HeroWarBot():
     def __init__(self):
         self.driver = load_driver()
         self.login()
-        self.Outland = Outland(driver)
-        self.Chest = Chest(driver)
-        self.Gifts = Gifts(driver)
-        self.AirShip=AirShip(driver)
-        self.Tower=Tower(driver)
+        self.Outland = Outland(self.driver)
+        self.Chest = Chest(self.driver)
+        self.Gifts = Gifts(self.driver)
+        self.AirShip=AirShip(self.driver)
+        self.Tower=Tower(self.driver)
 
         self.run()
 

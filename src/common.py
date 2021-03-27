@@ -8,7 +8,7 @@ def random_click(box):
     x_click = int(random.uniform(box.left, box.left+box.width))
     y_click = int(random.uniform(box.top, box.top+box.height))
     gui.moveTo(x_click, y_click)
-
+    gui.click()
     return
 
 

@@ -25,7 +25,7 @@ class AirShip():
 
     def collect_chest(self):
         for i in range(0, 10):
-            if not click_on_image('screenshot\\airship_chest.PNG', confidence=0.8, retry=5):
+            if not click_on_image('screenshot\\airship_chest.PNG', confidence=0.8, num_retry=5):
                 break
             click_on_image('screenshot\\airship_chest_key.PNG')
             click_on_image('screenshot\popup_close.PNG')
